@@ -5,7 +5,8 @@
 		"scss": "node-sass --include-path scss sass/style.scss style.css --output-style=expanded --indent-type=tab --indent-width=1",
 		"autoprefixer": "postcss style.css -u autoprefixer -o style.css --no-map",
 		"stylelint": "stylelint 'style.css'",
-		"stylefix": "stylelint 'style.css' --fix"
+		"stylefix": "stylelint 'style.css' --fix",
+		"watch-css": "nodemon -e scss -x \"npm run scss\""
 	},
 	"devDependencies": {
 		"autoprefixer": "^7.1.1",
