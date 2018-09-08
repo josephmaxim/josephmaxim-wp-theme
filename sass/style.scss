@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800');
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
@@ -69,6 +70,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# pages layout
+--------------------------------------------------------------*/
+@import "layout/fullpage";
+// @import "layout/content-sidebar";
+// @import "layout/sidebar-content";
 
 /*--------------------------------------------------------------
 # Accessibility
