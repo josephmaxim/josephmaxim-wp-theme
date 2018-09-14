@@ -1,6 +1,10 @@
 @mixin small {
 	body {
-		background: red !important;
+		background: orange;
 		width: 100%;
+	}
+	.site-header {
+		background: blue;
+		overflow: auto;
 	}
 }

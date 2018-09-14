@@ -343,16 +343,22 @@ template {
 	display: none;
 }
 
-body {
-	background: red !important;
-	width: 100%;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 1px) {
+	body {
+		background: orange;
+		width: 100%;
+	}
+	.site-header {
+		background: blue;
+		overflow: auto;
+	}
 }
 
-/* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	body {
-		background: green !important;
+		background: blue;
 		width: 100%;
 	}
 }
@@ -360,7 +366,7 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 1020px) {
 	body {
-		background: green !important;
+		background: pink;
 		width: 1000px;
 	}
 }

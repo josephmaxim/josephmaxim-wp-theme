@@ -13,26 +13,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800');
 @import "normalize";
-@mixin small {
-	body {
-		background: red !important;
-		width: 100%;
-	}
-}
-@mixin medium {
-	body {
-		background: green !important;
-		width: 100%;
-	}
-}
+
+@import "viewports/small";
+@import "viewports/medium";
 @import "viewports/large";
-
-@include small;
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 1px) { 
-	//@include small;
+	@include small;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
