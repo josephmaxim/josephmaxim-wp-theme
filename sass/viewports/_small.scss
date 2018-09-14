@@ -1,10 +1,40 @@
 @mixin small {
 	body {
-		background: orange;
 		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 0;
 	}
+
 	.site-header {
-		background: blue;
-		overflow: auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 10px;
+		.site-branding {
+
+					color: #222;
+					text-decoration: none;
+			h1 {
+				font-size: 14px;
+				a {
+					color: #222;
+					text-decoration: none;
+				}
+			}
+		}
+		.site-navigation {
+			background: green;
+		}
+	}
+
+	.post-thumbnail {
+
+		img {
+			width: 100%;
+			vertical-align: bottom;
+			height: auto;
+		}
+
 	}
 }
