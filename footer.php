@@ -24,8 +24,9 @@
 			<!-- <span class="sep"> | </span> -->
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'josephmaxim' ), 'josephmaxim', '<a href="https://josephmaxim.io">Joseph Maxim</a>' );
+				printf( esc_html__( '&copy; %3$s theme by %2$s.', 'josephmaxim' ), 'josephmaxim', '<a href="https://josephmaxim.io">Joseph Maxim</a>', date('Y') );
 				?>
+				
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
