@@ -26,6 +26,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	@include medium;
 }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1020px) {
+@media (min-width: 900px) {
 	@include large;
 }

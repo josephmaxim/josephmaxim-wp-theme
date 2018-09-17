@@ -1,6 +1,84 @@
 @mixin large {
-	body {
-		background: pink;
-		width: 1000px;
+
+	.site{
+		background: #fff;
+		width: 900px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.site-header {
+		padding: 10px 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.site-branding {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			h1 {
+				font-size: 27px;
+				margin: 0;
+				padding: 0px 0px 0px 0px;
+				a {
+					color: #222;
+					text-decoration: none;
+				}
+			}
+			.site-description {
+				margin: 0;
+				font-size: 10px;
+			}
+		}
+		.main-navigation {
+			display: flex;
+			align-items: center;
+			.menu-toggle {
+				display: none;
+			}
+			.menu{
+				position: unset;
+				display: block;
+				background: #fff;
+				border-radius: 0px;
+				box-shadow: none;
+				padding: 0;
+				margin: 0;
+				ul {
+					display: flex;
+					justify-content: space-between;
+					li{
+						list-style: none;
+						text-align: right;
+						a {
+							padding: 0px;
+							margin-left: 15px;
+							display: block;
+							font-size: 12px;
+							text-transform: capitalize;
+							font-weight: 400;
+							color: #222;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		.toggled {
+			.menu{
+				display: block;
+			}
+		}
+	}
+
+	.post-thumbnail {
+
+		img {
+			width: 100%;
+			vertical-align: bottom;
+			height: auto;
+		}
+
 	}
 }

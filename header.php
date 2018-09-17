@@ -25,6 +25,7 @@
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'josephmaxim' ); ?></a> -->
 
 	<header id="masthead" class="site-header">
+		<!-- .site-branding -->
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -42,17 +43,18 @@
 				?>
 				<p class="site-description"><?php echo $josephmaxim_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
 
+		<!-- #site-navigation -->
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'josephmaxim' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'josephmaxim' ); ?><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/nav-menu.png" alt="Primary menu" /></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
