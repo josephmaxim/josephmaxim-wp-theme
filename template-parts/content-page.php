@@ -18,7 +18,7 @@
 
 	<div class="entry-content">
 		<?php
-		//the_content();
+		the_content();
 
 		wp_link_pages( array(
 			'before' => '<div class="n b">' . esc_html__( 'Pages:', 'josephmaxim' ),
