@@ -47,7 +47,7 @@
 
 		<!-- #site-navigation -->
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'josephmaxim' ); ?><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/nav-menu.png" alt="Primary menu" /></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'josephmaxim' ); ?><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/nav-menu.png" alt="Primary Menu" /></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

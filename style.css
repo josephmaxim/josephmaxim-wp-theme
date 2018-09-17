@@ -43,7 +43,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 		padding: 0px 0px 0px 0px;
 	}
 	.site-header .site-branding .site-title a {
-		font-weight: 800;
+		font-weight: 500;
 		color: #222;
 		text-decoration: none;
 	}
@@ -63,27 +63,26 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 		vertical-align: bottom;
 		border-radius: 50px;
 	}
-	.site-header .main-navigation .menu {
+	.site-header .main-navigation .menu, .site-header .main-navigation .menu-primary-menu-container {
 		position: absolute;
 		display: none;
 		right: 0;
-		margin: 10px;
-		padding: 10px;
 		background: #fff;
-		border-radius: 5px;
+		border-radius: 2px;
+		margin: 10px;
+	}
+	.site-header .main-navigation .menu ul, .site-header .main-navigation .menu-primary-menu-container ul {
 		-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
 		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
-	}
-	.site-header .main-navigation .menu ul {
 		margin: 0;
 		padding: 0;
 	}
-	.site-header .main-navigation .menu ul li {
+	.site-header .main-navigation .menu ul li, .site-header .main-navigation .menu-primary-menu-container ul li {
 		list-style: none;
 		text-align: right;
 	}
-	.site-header .main-navigation .menu ul li a {
+	.site-header .main-navigation .menu ul li a, .site-header .main-navigation .menu-primary-menu-container ul li a {
 		padding: 8px;
 		margin: 2px;
 		display: block;
@@ -93,7 +92,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 		color: #222;
 		text-decoration: none;
 	}
-	.site-header .toggled .menu {
+	.site-header .toggled .menu, .site-header .toggled .menu-primary-menu-container {
 		display: block;
 	}
 	.post-thumbnail img {
@@ -144,34 +143,33 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	.site-header .main-navigation .menu-toggle {
 		display: none;
 	}
-	.site-header .main-navigation .menu {
+	.site-header .main-navigation .menu, .site-header .main-navigation .menu-primary-menu-container {
 		position: unset;
 		display: block;
 		background: #fff;
 		border-radius: 0px;
-		box-shadow: none;
 		padding: 0;
 		margin: 0;
 	}
-	.site-header .main-navigation .menu ul {
+	.site-header .main-navigation .menu ul, .site-header .main-navigation .menu-primary-menu-container ul {
+		box-shadow: none;
 		display: flex;
 		justify-content: space-between;
 	}
-	.site-header .main-navigation .menu ul li {
+	.site-header .main-navigation .menu ul li, .site-header .main-navigation .menu-primary-menu-container ul li {
 		list-style: none;
 		text-align: right;
 	}
-	.site-header .main-navigation .menu ul li a {
+	.site-header .main-navigation .menu ul li a, .site-header .main-navigation .menu-primary-menu-container ul li a {
 		padding: 0px;
 		margin-left: 15px;
 		display: block;
-		font-size: 12px;
 		text-transform: capitalize;
 		font-weight: 400;
 		color: #222;
 		text-decoration: none;
 	}
-	.site-header .toggled .menu {
+	.site-header .toggled .menu, .site-header .toggled .menu-primary-menu-container {
 		display: block;
 	}
 	.post-thumbnail img {
