@@ -26,7 +26,7 @@ if ( ! function_exists( 'josephmaxim_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'josephmaxim' ),
+			esc_html_x( '%s', 'post date', 'josephmaxim' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -133,13 +133,15 @@ if ( ! function_exists( 'josephmaxim_post_thumbnail' ) ) :
 		<?php else : ?>
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+		<!-- <div class="post-thumbnail"> -->
 			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
+				the_post_thumbnail( 'post-thumbnail', array(
+					'alt' => the_title_attribute( array(
+						'echo' => false,
+					) ),
+				) );
 			?>
+		<!-- </div> -->
 		</a>
 
 		<?php

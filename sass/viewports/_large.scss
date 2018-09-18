@@ -72,12 +72,25 @@
 	}
 
 	.post-thumbnail {
-
 		img {
 			width: 100%;
 			vertical-align: bottom;
 			height: auto;
 		}
-
 	}
+
+	article {
+		header {
+			.header-content {
+				padding: 25px;
+				.entry-title {
+					font-size: 35px;
+					a {
+						font-size: 35px;
+					}
+				}
+			}
+		}
+	}
+
 }

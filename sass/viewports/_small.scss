@@ -22,9 +22,9 @@
 			flex: 1;
 			display: flex;
 			flex-direction: column;
-			align-content: center;
+			justify-content: center;
 			.site-title {
-				font-size: 27px;
+				font-size: 25px;
 				margin: 0;
 				padding: 0px 0px 0px 0px;
 				a {
@@ -58,7 +58,7 @@
 				display: none;
 				right: 0;
 				background: #fff;
-				border-radius: 2px;
+				border-radius: 9px;
 				margin: 10px;
 				ul {
 					-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
@@ -86,6 +86,7 @@
 		.toggled {
 			.menu, .menu-primary-menu-container{
 				display: block;
+				z-index: 9999;
 			}
 		}
 	}
@@ -101,28 +102,82 @@
 	}
 
 	// Article Cell
-
 	article {
 		header {
-			position: relative;
-			background: yellow;
+			height: 40vh;
 			width: 100%;
-			height: 50vh;
+			position: relative;
+			border-radius: 4px;
+			margin-bottom: 10px;
+
+			-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+
 			.post-thumbnail {
 				position: absolute;
-				z-index: 0;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: inherit;
+				img {
+					vertical-align: top;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: inherit;
+				}
 			}
+
 			.header-content {
+				border-radius: inherit;
+				background: rgba(0,0,0,0.7);
 				position: absolute;
-				color: #fff;
-				bottom:0;
-				top:0;
-				width: 100%;
-				z-index: 99;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				pointer-events: none;
+				.entry-title {
+					margin: 0;
+					font-weight: 500;
+					color: #fff;
+					font-size: 25px;
+					a {
+						color: #fff;
+						text-decoration: none;
+						font-size: 25px;
+					}
+				}
+				.entry-meta {
+					.posted-on a {
+						color: #999;
+						text-decoration: none;
+						font-size: 12px;
+					}
+				}
 			}
 		}
-		background: red;
+		.entry-content {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+			font-size: 17px;
+			line-height: 1.7;
 
+			ul {
+				padding-left: 20px;
+			}
+
+			a {
+				text-decoration: none;
+				color: rgb(74, 74, 255);
+			}
+
+		}
 	}
 
 
