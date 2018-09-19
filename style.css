@@ -158,8 +158,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	}
 	article .entry-content {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-		font-size: 17px;
+		font-size: 15px;
 		line-height: 1.7;
+		word-wrap: break-word;
 	}
 	article .entry-content ul {
 		padding-left: 20px;
@@ -167,6 +168,30 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	article .entry-content a {
 		text-decoration: none;
 		color: #4a4aff;
+	}
+	article .entry-content pre {
+		font-family: "Courier New", monospace, serif;
+		margin-bottom: 10px;
+		overflow: auto;
+		padding: 5px;
+		background-color: #eee;
+		word-wrap: break-word;
+	}
+	article .entry-content code {
+		background-color: #eee;
+	}
+	article .entry-content blockquote {
+		background: #f9f9f9;
+		border-left: 3px solid #ccc;
+		margin: 0;
+		padding: 5px 5px;
+	}
+	article .entry-content blockquote p {
+		display: inline;
+	}
+	article .entry-content .size-full {
+		width: 100%;
+		height: auto;
 	}
 	footer .site-info {
 		padding: 10px 0px;
